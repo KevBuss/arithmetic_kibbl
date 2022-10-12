@@ -3,8 +3,8 @@ public class Minus extends Binop{
         super(l,r);
     }
 
-    public double eval() {
-        return lChild.eval() + rChild.eval();
+    public double eval(double[] data) {
+        return lChild.eval(data) - rChild.eval(data);
     }
 
     public String toString() {

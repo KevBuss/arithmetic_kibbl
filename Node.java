@@ -1,8 +1,8 @@
-public class Node {
+public abstract class Node {
     public Node() {
     }
 
-    public double eval() {
+    public double eval(double[] data) {
         System.out.println("Eval method in node");
         return 0;
     }

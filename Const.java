@@ -5,7 +5,7 @@ public class Const extends Node {
         value = d;
     }
 
-    public double eval() {
+    public double eval(double[] data) {
         return value;
     }
 
