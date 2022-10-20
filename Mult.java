@@ -1,6 +1,12 @@
+import java.util.*;
+
 public class Mult extends Binop {
     public Mult(Node l, Node r) {
         super(l, r);
+    }
+
+    public Mult() {
+        super();
     }
 
     public double eval(double[] data) {

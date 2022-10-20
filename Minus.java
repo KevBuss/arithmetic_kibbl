@@ -1,6 +1,12 @@
+import java.util.*;
+
 public class Minus extends Binop{
     public Minus(Node l, Node r) {
         super(l,r);
+    }
+
+    public Minus() {
+        super();
     }
 
     public double eval(double[] data) {

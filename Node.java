@@ -1,4 +1,6 @@
-public abstract class Node {
+import java.util.*;
+
+public abstract class Node implements Cloneable {
     public Node() {
     }
 
@@ -10,4 +12,16 @@ public abstract class Node {
     public String toString() {
         return "";
     }
+
+    public Object clone() {
+        Object o = null;
+        try {
+            o = super.clone();
+        } catch (CloneNotSupportedException e) {
+            System.out.println("SimpleClass can't clone.");
+        }
+        return o;
+    }
+
+    public abstract void addRandomKids(OperatorFactory o,TerminalFactory t, int maxDepth, Random rand);
 }
