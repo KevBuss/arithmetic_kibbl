@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Variable extends Node {
     private int variable;
 
@@ -10,6 +12,9 @@ public class Variable extends Node {
     }
 
     public String toString() {
-        return "X"+variable;
+        return "X" + variable;
+    }
+
+    public void addRandomKids(OperatorFactory o, TerminalFactory t, int maxDepth, Random rand) {
     }
 }

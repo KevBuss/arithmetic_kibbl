@@ -1,6 +1,12 @@
+import java.util.*;
+
 public class Divide extends Binop {
     public Divide(Node l, Node r) {
         super(l, r);
+    }
+
+    public Divide() {
+        super();
     }
 
     public double eval(double[] data) {

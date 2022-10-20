@@ -1,5 +1,10 @@
+import java.util.*;
+
 public class Const extends Node {
     private double value;
+
+    public Const() {
+    }
 
     public Const(double d) {
         value = d;
@@ -10,6 +15,9 @@ public class Const extends Node {
     }
 
     public String toString() {
-        return ""+value;
+        return "" + value;
+    }
+
+    public void addRandomKids(OperatorFactory o, TerminalFactory t, int maxDepth, Random rand) {
     }
 }
