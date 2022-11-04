@@ -17,4 +17,7 @@ public class Variable extends Node {
 
     public void addRandomKids(OperatorFactory o, TerminalFactory t, int maxDepth, Random rand) {
     }
+    public int mySize() {
+        return 1;
+    }
 }
