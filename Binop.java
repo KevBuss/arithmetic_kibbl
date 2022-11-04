@@ -51,4 +51,7 @@ public class Binop extends Node {
             }
         }
     }
+    public int mySize() {
+        return 1+lChild.mySize()+rChild.mySize();
+    }
 }

@@ -23,5 +23,9 @@ public abstract class Node implements Cloneable {
         return o;
     }
 
-    public abstract void addRandomKids(OperatorFactory o,TerminalFactory t, int maxDepth, Random rand);
+    public int mySize() {
+        return 0;
+    }
+
+    public abstract void addRandomKids(OperatorFactory o, TerminalFactory t, int maxDepth, Random rand);
 }

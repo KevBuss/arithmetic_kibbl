@@ -16,4 +16,7 @@ public class Mult extends Binop {
     public String toString() {
         return "("+lChild.toString()+" * "+rChild.toString()+")";
     }
+    public int mySize() {
+        return 1+lChild.mySize()+rChild.mySize();
+    }
 }
